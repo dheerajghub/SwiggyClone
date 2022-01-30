@@ -9,21 +9,47 @@
 /* Begin PBXBuildFile section */
 		44198CA527A5108700EC9883 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44198CA427A5108700EC9883 /* AppDelegate.swift */; };
 		44198CA727A5108700EC9883 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44198CA627A5108700EC9883 /* SceneDelegate.swift */; };
-		44198CA927A5108700EC9883 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44198CA827A5108700EC9883 /* ViewController.swift */; };
-		44198CAC27A5108700EC9883 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44198CAA27A5108700EC9883 /* Main.storyboard */; };
 		44198CAE27A5108900EC9883 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44198CAD27A5108900EC9883 /* Assets.xcassets */; };
 		44198CB127A5108900EC9883 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44198CAF27A5108900EC9883 /* LaunchScreen.storyboard */; };
+		44198CBF27A51A5F00EC9883 /* FoodVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44198CBE27A51A5F00EC9883 /* FoodVC.swift */; };
+		44198CC227A51F0E00EC9883 /* FoodVC+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44198CC127A51F0E00EC9883 /* FoodVC+Extension.swift */; };
+		44198CC727A5210900EC9883 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44198CC627A5210900EC9883 /* UIView+Extension.swift */; };
+		44198CCA27A527CB00EC9883 /* FoodFilterHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44198CC927A527CB00EC9883 /* FoodFilterHeaderView.swift */; };
+		44198CCC27A5378100EC9883 /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44198CCB27A5378100EC9883 /* SectionHeaderView.swift */; };
+		44198CCE27A5380000EC9883 /* SectionFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44198CCD27A5380000EC9883 /* SectionFooterView.swift */; };
+		44198CD427A5510C00EC9883 /* Layout+Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44198CD327A5510C00EC9883 /* Layout+Enum.swift */; };
+		44198CD727A5524100EC9883 /* Layout+Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44198CD627A5524100EC9883 /* Layout+Functions.swift */; };
+		44198CDA27A5548900EC9883 /* AppContants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44198CD927A5548900EC9883 /* AppContants.swift */; };
+		44198CDC27A5560700EC9883 /* FoodTopBannerCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44198CDB27A5560700EC9883 /* FoodTopBannerCVCell.swift */; };
+		44198CDE27A55C7D00EC9883 /* FoodCategoryCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44198CDD27A55C7D00EC9883 /* FoodCategoryCVCell.swift */; };
+		44198CE027A6445900EC9883 /* FoodSuggestionCardCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44198CDF27A6445900EC9883 /* FoodSuggestionCardCVCell.swift */; };
+		44198CE227A64D3E00EC9883 /* RestaurantsListCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44198CE127A64D3E00EC9883 /* RestaurantsListCVCell.swift */; };
+		44198CE727A69FFA00EC9883 /* NSTextAttachment+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44198CE327A65A8200EC9883 /* NSTextAttachment+Extension.swift */; };
+		44198CE927A6A01500EC9883 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44198CE827A6A01500EC9883 /* UIButton+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		44198CA127A5108700EC9883 /* SwiggyClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiggyClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44198CA427A5108700EC9883 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44198CA627A5108700EC9883 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		44198CA827A5108700EC9883 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		44198CAB27A5108700EC9883 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		44198CAD27A5108900EC9883 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44198CB027A5108900EC9883 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44198CB227A5108900EC9883 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44198CBE27A51A5F00EC9883 /* FoodVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodVC.swift; sourceTree = "<group>"; };
+		44198CC127A51F0E00EC9883 /* FoodVC+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FoodVC+Extension.swift"; sourceTree = "<group>"; };
+		44198CC627A5210900EC9883 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		44198CC927A527CB00EC9883 /* FoodFilterHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodFilterHeaderView.swift; sourceTree = "<group>"; };
+		44198CCB27A5378100EC9883 /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
+		44198CCD27A5380000EC9883 /* SectionFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionFooterView.swift; sourceTree = "<group>"; };
+		44198CD327A5510C00EC9883 /* Layout+Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Layout+Enum.swift"; sourceTree = "<group>"; };
+		44198CD627A5524100EC9883 /* Layout+Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Layout+Functions.swift"; sourceTree = "<group>"; };
+		44198CD927A5548900EC9883 /* AppContants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContants.swift; sourceTree = "<group>"; };
+		44198CDB27A5560700EC9883 /* FoodTopBannerCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTopBannerCVCell.swift; sourceTree = "<group>"; };
+		44198CDD27A55C7D00EC9883 /* FoodCategoryCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCategoryCVCell.swift; sourceTree = "<group>"; };
+		44198CDF27A6445900EC9883 /* FoodSuggestionCardCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodSuggestionCardCVCell.swift; sourceTree = "<group>"; };
+		44198CE127A64D3E00EC9883 /* RestaurantsListCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsListCVCell.swift; sourceTree = "<group>"; };
+		44198CE327A65A8200EC9883 /* NSTextAttachment+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSTextAttachment+Extension.swift"; sourceTree = "<group>"; };
+		44198CE827A6A01500EC9883 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +82,132 @@
 		44198CA327A5108700EC9883 /* SwiggyClone */ = {
 			isa = PBXGroup;
 			children = (
-				44198CA427A5108700EC9883 /* AppDelegate.swift */,
-				44198CA627A5108700EC9883 /* SceneDelegate.swift */,
-				44198CA827A5108700EC9883 /* ViewController.swift */,
-				44198CAA27A5108700EC9883 /* Main.storyboard */,
-				44198CAD27A5108900EC9883 /* Assets.xcassets */,
-				44198CAF27A5108900EC9883 /* LaunchScreen.storyboard */,
-				44198CB227A5108900EC9883 /* Info.plist */,
+				44198CB827A519E500EC9883 /* AppBase */,
+				44198CB927A519FD00EC9883 /* Plist */,
+				44198CBA27A51A0B00EC9883 /* Resources */,
+				44198CBB27A51A1E00EC9883 /* Scenes */,
+				44198CC327A520B200EC9883 /* AppUtility */,
 			);
 			path = SwiggyClone;
+			sourceTree = "<group>";
+		};
+		44198CB827A519E500EC9883 /* AppBase */ = {
+			isa = PBXGroup;
+			children = (
+				44198CA427A5108700EC9883 /* AppDelegate.swift */,
+				44198CA627A5108700EC9883 /* SceneDelegate.swift */,
+				44198CAF27A5108900EC9883 /* LaunchScreen.storyboard */,
+			);
+			path = AppBase;
+			sourceTree = "<group>";
+		};
+		44198CB927A519FD00EC9883 /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				44198CB227A5108900EC9883 /* Info.plist */,
+			);
+			path = Plist;
+			sourceTree = "<group>";
+		};
+		44198CBA27A51A0B00EC9883 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				44198CAD27A5108900EC9883 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		44198CBB27A51A1E00EC9883 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				44198CD127A550D700EC9883 /* Model */,
+				44198CBC27A51A2A00EC9883 /* Views */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		44198CBC27A51A2A00EC9883 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				44198CBD27A51A3F00EC9883 /* Food */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		44198CBD27A51A3F00EC9883 /* Food */ = {
+			isa = PBXGroup;
+			children = (
+				44198CC827A527AE00EC9883 /* Views */,
+				44198CC027A51A6B00EC9883 /* Controllers */,
+			);
+			path = Food;
+			sourceTree = "<group>";
+		};
+		44198CC027A51A6B00EC9883 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				44198CBE27A51A5F00EC9883 /* FoodVC.swift */,
+				44198CC127A51F0E00EC9883 /* FoodVC+Extension.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		44198CC327A520B200EC9883 /* AppUtility */ = {
+			isa = PBXGroup;
+			children = (
+				44198CD827A5546500EC9883 /* Other */,
+				44198CC427A520D500EC9883 /* Extensions */,
+			);
+			path = AppUtility;
+			sourceTree = "<group>";
+		};
+		44198CC427A520D500EC9883 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				44198CC527A520F400EC9883 /* UIKit-Extension */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		44198CC527A520F400EC9883 /* UIKit-Extension */ = {
+			isa = PBXGroup;
+			children = (
+				44198CC627A5210900EC9883 /* UIView+Extension.swift */,
+				44198CE327A65A8200EC9883 /* NSTextAttachment+Extension.swift */,
+				44198CE827A6A01500EC9883 /* UIButton+Extension.swift */,
+			);
+			path = "UIKit-Extension";
+			sourceTree = "<group>";
+		};
+		44198CC827A527AE00EC9883 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				44198CC927A527CB00EC9883 /* FoodFilterHeaderView.swift */,
+				44198CCB27A5378100EC9883 /* SectionHeaderView.swift */,
+				44198CCD27A5380000EC9883 /* SectionFooterView.swift */,
+				44198CDB27A5560700EC9883 /* FoodTopBannerCVCell.swift */,
+				44198CDD27A55C7D00EC9883 /* FoodCategoryCVCell.swift */,
+				44198CDF27A6445900EC9883 /* FoodSuggestionCardCVCell.swift */,
+				44198CE127A64D3E00EC9883 /* RestaurantsListCVCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		44198CD127A550D700EC9883 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				44198CD327A5510C00EC9883 /* Layout+Enum.swift */,
+				44198CD627A5524100EC9883 /* Layout+Functions.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		44198CD827A5546500EC9883 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				44198CD927A5548900EC9883 /* AppContants.swift */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +270,6 @@
 			files = (
 				44198CB127A5108900EC9883 /* LaunchScreen.storyboard in Resources */,
 				44198CAE27A5108900EC9883 /* Assets.xcassets in Resources */,
-				44198CAC27A5108700EC9883 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +280,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44198CA927A5108700EC9883 /* ViewController.swift in Sources */,
+				44198CD727A5524100EC9883 /* Layout+Functions.swift in Sources */,
+				44198CCE27A5380000EC9883 /* SectionFooterView.swift in Sources */,
+				44198CBF27A51A5F00EC9883 /* FoodVC.swift in Sources */,
 				44198CA527A5108700EC9883 /* AppDelegate.swift in Sources */,
+				44198CC227A51F0E00EC9883 /* FoodVC+Extension.swift in Sources */,
+				44198CDE27A55C7D00EC9883 /* FoodCategoryCVCell.swift in Sources */,
+				44198CD427A5510C00EC9883 /* Layout+Enum.swift in Sources */,
+				44198CDC27A5560700EC9883 /* FoodTopBannerCVCell.swift in Sources */,
+				44198CE027A6445900EC9883 /* FoodSuggestionCardCVCell.swift in Sources */,
+				44198CC727A5210900EC9883 /* UIView+Extension.swift in Sources */,
+				44198CE727A69FFA00EC9883 /* NSTextAttachment+Extension.swift in Sources */,
+				44198CCC27A5378100EC9883 /* SectionHeaderView.swift in Sources */,
 				44198CA727A5108700EC9883 /* SceneDelegate.swift in Sources */,
+				44198CE927A6A01500EC9883 /* UIButton+Extension.swift in Sources */,
+				44198CCA27A527CB00EC9883 /* FoodFilterHeaderView.swift in Sources */,
+				44198CE227A64D3E00EC9883 /* RestaurantsListCVCell.swift in Sources */,
+				44198CDA27A5548900EC9883 /* AppContants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		44198CAA27A5108700EC9883 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				44198CAB27A5108700EC9883 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		44198CAF27A5108900EC9883 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -291,10 +439,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9W5STY688V;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SwiggyClone/Info.plist;
+				INFOPLIST_FILE = SwiggyClone/Plist/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -319,10 +466,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9W5STY688V;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SwiggyClone/Info.plist;
+				INFOPLIST_FILE = SwiggyClone/Plist/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
