@@ -7,3 +7,12 @@ This app is a clone of Swiggy (in progress). In this project we will dive deep i
 
 ## Progress Glance
 <img src="https://imgur.com/X9Kruvj.png" height="600"> <img src="https://imgur.com/7dcfmsL.png" height="600">
+
+## Stuck Somewhere or having trouble ?
+Drop me mail @ dheerajsh123456@gmail.com
+
+## Do you like my contribution to community? Go Spread a word!
+Just give it a star ⭐️ and spread the word!
+
+## Credits
+**©** **Dheeraj kumar sharma** - *2022*
