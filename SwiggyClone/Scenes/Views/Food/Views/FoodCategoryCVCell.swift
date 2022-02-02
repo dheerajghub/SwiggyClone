@@ -11,19 +11,27 @@ class FoodCategoryCVCell: UICollectionViewCell {
     
     // MARK: PROPERTIES -
     
+    var data: FoodCategoryDataModel? {
+        didSet {
+            guard let data = data else { return }
+            categoryImage.image = UIImage(named: data.categoryImage)
+            categoryLabel.text = data.categoryName.capitalized
+        }
+    }
+    
     let categoryImage: UIImageView = {
         let img = UIImageView()
         img.translatesAutoresizingMaskIntoConstraints = false
-        img.backgroundColor = .black
+        img.contentMode = .scaleAspectFit
         return img
     }()
     
     let categoryLabel: UILabel = {
         let l = UILabel()
         l.translatesAutoresizingMaskIntoConstraints = false
-        l.text = "category name".capitalized
-        l.font = UIFont.systemFont(ofSize: 11)
+        l.font = UIFont.customFont(ofType: .light, withSize: 10)
         l.numberOfLines = 2
+        l.textColor = .black.withAlphaComponent(0.8)
         l.textAlignment = .center
         return l
     }()

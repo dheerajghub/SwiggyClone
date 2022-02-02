@@ -11,11 +11,19 @@ class FoodTopBannerCVCell: UICollectionViewCell {
     
     // MARK: PROPERTIES -
     
+    var data: FoodTopBannerModel? {
+        didSet {
+            guard let data = data else { return }
+            bannerImage.image = UIImage(named: data.bannerImage)
+        }
+    }
+    
     let bannerImage: UIImageView = {
         let img = UIImageView()
         img.translatesAutoresizingMaskIntoConstraints = false
-        img.backgroundColor = .black
         img.layer.cornerRadius = 5
+        img.clipsToBounds = true
+        img.contentMode = .scaleAspectFit
         return img
     }()
     

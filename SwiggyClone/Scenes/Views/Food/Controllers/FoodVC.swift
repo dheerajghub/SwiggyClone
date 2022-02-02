@@ -15,6 +15,7 @@ class FoodVC: UIViewController {
     let foodVCHeaderViewId = "FoodVCFilterHeaderView"
     let sectionHeaderViewId = "SectionHeaderView"
     let sectionFooterViewId = "SectionFooterView"
+    let sectionHeaderView2Id = "SectionHeaderView_2"
     
     lazy var collectionView: UICollectionView = {
         let cv = UICollectionView(frame: .zero , collectionViewLayout: UICollectionViewFlowLayout.init())
@@ -26,19 +27,26 @@ class FoodVC: UIViewController {
         cv.register(FoodTopBannerCVCell.self, forCellWithReuseIdentifier: "FoodTopBannerCVCell")
         cv.register(FoodCategoryCVCell.self, forCellWithReuseIdentifier: "FoodCategoryCVCell")
         cv.register(FoodSuggestionCardCVCell.self, forCellWithReuseIdentifier: "FoodSuggestionCardCVCell")
-        cv.register(RestaurantsListCVCell.self, forCellWithReuseIdentifier: "FoodListCVCell")
+        cv.register(RestaurantsListCVCell.self, forCellWithReuseIdentifier: "RestaurantsListCVCell")
+        cv.register(RestaurantVeganCVCell.self, forCellWithReuseIdentifier: "RestaurantVeganCVCell")
         
         cv.register(UICollectionViewCell.self, forCellWithReuseIdentifier: cellId)
+        
         cv.register(FoodFilterHeaderView.self, forSupplementaryViewOfKind: headerKind, withReuseIdentifier: foodVCHeaderViewId)
         cv.register(SectionHeaderView.self, forSupplementaryViewOfKind: headerKind, withReuseIdentifier: sectionHeaderViewId)
         cv.register(SectionFooterView.self, forSupplementaryViewOfKind: footerKind, withReuseIdentifier: sectionFooterViewId)
+        cv.register(SectionHeaderView_2.self, forSupplementaryViewOfKind: headerKind, withReuseIdentifier: sectionHeaderView2Id)
+        
+        cv.backgroundColor = .white
+        
         return cv
     }()
     
-    let filterHeaderView: FoodFilterHeaderView = {
+    lazy var filterHeaderView: FoodFilterHeaderView = {
         let v = FoodFilterHeaderView()
         v.translatesAutoresizingMaskIntoConstraints = false
         v.isHidden = true
+        v.delegate = self
         return v
     }()
     
@@ -70,7 +78,7 @@ class FoodVC: UIViewController {
         
         let homeBtn = UIButton()
         homeBtn.frame = CGRect(x: 0, y: 0, width: 70, height: 30)
-        homeBtn.setButtonTitleWithRightImage(title: "Home".uppercased(), btnImage: "ic_arrow_down", customFont: UIFont.systemFont(ofSize: 17, weight: .bold), color: .black, imageColor: .black, imageSize: 20)
+        homeBtn.setButtonTitleWithRightImage(title: "Home".uppercased(), btnImage: "ic_arrow_down", customFont: UIFont.customFont(ofType: .bold, withSize: 16), color: .black, imageColor: .black, imageSize: 20)
         let leftBarButtonItem = UIBarButtonItem(customView: homeBtn)
         
         navigationItem.leftBarButtonItem = leftBarButtonItem
@@ -81,6 +89,14 @@ class FoodVC: UIViewController {
         view.backgroundColor = .white
         view.addSubview(collectionView)
         view.addSubview(filterHeaderView)
+        
+        for family in UIFont.familyNames {
+            print("family:", family)
+            for font in UIFont.fontNames(forFamilyName: family) {
+                print("font:", font)
+            }
+        }
+        
     }
     
     func setUpConstraints(){

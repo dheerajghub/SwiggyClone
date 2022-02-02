@@ -22,7 +22,8 @@ class SectionHeaderView: UICollectionReusableView {
         let l = UILabel()
         l.translatesAutoresizingMaskIntoConstraints = false
         l.text = "Restaurants Curated For"
-        l.font = UIFont.systemFont(ofSize: 16, weight: .medium)
+        l.font = UIFont.customFont(ofType: .bold, withSize: 15)
+        l.textColor = .black.withAlphaComponent(0.8)
         return l
     }()
     

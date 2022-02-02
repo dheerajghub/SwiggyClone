@@ -7,12 +7,17 @@
 
 import UIKit
 
+protocol FoodFilterHeaderActionDelegate {
+    func didFilterBtnTapped()
+}
+
 class FoodFilterHeaderView: UICollectionReusableView {
         
     // MARK: PROPERTIES -
     
     var leadingConstraints: NSLayoutConstraint?
     var trailingConstraints: NSLayoutConstraint?
+    var delegate: FoodFilterHeaderActionDelegate?
     
     var isStickHeader: Bool? {
         didSet {
@@ -37,7 +42,7 @@ class FoodFilterHeaderView: UICollectionReusableView {
         l.translatesAutoresizingMaskIntoConstraints = false
         l.text = "All Restaurants".uppercased()
         l.textColor = .black.withAlphaComponent(0.8)
-        l.font = UIFont.systemFont(ofSize: 14, weight: .regular)
+        l.font = UIFont.customFont(ofType: .regular, withSize: 12)
         return l
     }()
     
@@ -54,7 +59,8 @@ class FoodFilterHeaderView: UICollectionReusableView {
         btn.translatesAutoresizingMaskIntoConstraints = false
         btn.setTitle("Sort/Filter", for: .normal)
         btn.setTitleColor(.black.withAlphaComponent(0.8), for: .normal)
-        btn.titleLabel?.font = UIFont.systemFont(ofSize: 14, weight: .regular)
+        btn.titleLabel?.font = UIFont.customFont(ofType: .regular, withSize: 13)
+        btn.addTarget(self, action: #selector(filterBtnPressed), for: .touchUpInside)
         return btn
     }()
     
@@ -113,6 +119,10 @@ class FoodFilterHeaderView: UICollectionReusableView {
         trailingConstraints = filterBtn.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -2) // or -17
         trailingConstraints?.isActive = true
         
+    }
+    
+    @objc func filterBtnPressed(){
+        delegate?.didFilterBtnTapped()
     }
     
 }

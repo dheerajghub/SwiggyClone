@@ -11,11 +11,19 @@ class FoodSuggestionCardCVCell: UICollectionViewCell {
     
     // MARK: PROPERTIES -
     
+    var data: CuratedRestaurantModel? {
+        didSet {
+            guard let data = data else { return }
+            cardImage.image = UIImage(named: data.image)
+            title.text = data.title.uppercased()
+            subtitle.text = "\(data.options) options".uppercased()
+        }
+    }
+    
     let cardImage: UIImageView = {
         let img = UIImageView()
         img.translatesAutoresizingMaskIntoConstraints = false
-        img.layer.cornerRadius = 42.5
-        img.backgroundColor = .black
+        img.contentMode = .scaleAspectFill
         return img
     }()
     
@@ -23,19 +31,18 @@ class FoodSuggestionCardCVCell: UICollectionViewCell {
         let l = UILabel()
         l.translatesAutoresizingMaskIntoConstraints = false
         l.numberOfLines = 2
-        l.text = "Cakes & desserts".uppercased()
-        l.font = UIFont.systemFont(ofSize: 13, weight: .semibold)
+        l.font = UIFont.customFont(ofType: .bold, withSize: 12)
         l.textAlignment = .center
+        l.textColor = .black.withAlphaComponent(0.8)
         return l
     }()
     
     let subtitle: UILabel = {
         let l = UILabel()
         l.translatesAutoresizingMaskIntoConstraints = false
-        l.font = UIFont.systemFont(ofSize: 10, weight: .medium)
+        l.font = UIFont.customFont(ofType: .regular, withSize: 10)
         l.textColor = .gray
         l.textAlignment = .center
-        l.text = "0 Options".uppercased()
         return l
     }()
     

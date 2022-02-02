@@ -6,6 +6,15 @@
 //
 
 import Foundation
+import UIKit
 
 let headerKind = "Header"
 let footerKind = "Footer"
+let sectionBackground = "SectionBackground"
+
+
+struct Colors {
+    
+    static let appOrange = UIColor.hexStringToUIColor(hex: "#FF6600")
+    
+}
