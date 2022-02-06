@@ -10,7 +10,7 @@ import Foundation
 extension FoodVC: FoodFilterHeaderActionDelegate {
     
     func didFilterBtnTapped() {
-        print("filterBtnTapped")
+        filterLaucher.showFilter()
     }
     
 }

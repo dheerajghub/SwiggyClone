@@ -16,6 +16,7 @@ class FoodVC: UIViewController {
     let sectionHeaderViewId = "SectionHeaderView"
     let sectionFooterViewId = "SectionFooterView"
     let sectionHeaderView2Id = "SectionHeaderView_2"
+    let filterLaucher = FilterLauncher()
     
     lazy var collectionView: UICollectionView = {
         let cv = UICollectionView(frame: .zero , collectionViewLayout: UICollectionViewFlowLayout.init())

@@ -38,6 +38,14 @@
 		44CBFA1927A953FC00D2B827 /* VeganRestaurantSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CBFA1827A953FC00D2B827 /* VeganRestaurantSectionModel.swift */; };
 		44CBFA1B27A95B1100D2B827 /* CuratedRestaurantsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CBFA1A27A95B1100D2B827 /* CuratedRestaurantsModel.swift */; };
 		44CBFA1D27AA448B00D2B827 /* RestaurantListDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CBFA1C27AA448B00D2B827 /* RestaurantListDataModel.swift */; };
+		44CBFAA627AE0AA100D2B827 /* FilterLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CBFAA527AE0AA100D2B827 /* FilterLauncher.swift */; };
+		44CBFAA827AE11EB00D2B827 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CBFAA727AE11EB00D2B827 /* FilterView.swift */; };
+		44CBFAAE27AE3C6700D2B827 /* FilterCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CBFAAD27AE3C6700D2B827 /* FilterCategoryView.swift */; };
+		44CBFAB027AE3C7300D2B827 /* FilterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CBFAAF27AE3C7300D2B827 /* FilterDetailView.swift */; };
+		44CBFAB227AE4C0100D2B827 /* FilterCategoryTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CBFAB127AE4C0100D2B827 /* FilterCategoryTVCell.swift */; };
+		44CBFAB427AE51B600D2B827 /* UIString+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CBFAB327AE51B600D2B827 /* UIString+Extension.swift */; };
+		44CBFAB627AF8ACF00D2B827 /* FilterDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CBFAB527AF8ACF00D2B827 /* FilterDetailTableViewCell.swift */; };
+		44CBFAB827AF8ECE00D2B827 /* FilterDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CBFAB727AF8ECE00D2B827 /* FilterDataModel.swift */; };
 		44F748D627A9335500329DD0 /* ProximaNovaCondensedBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 44F748D527A9334F00329DD0 /* ProximaNovaCondensedBold.otf */; };
 		44F748D727A9335A00329DD0 /* ProximaNovaAltRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 44F748D427A9334F00329DD0 /* ProximaNovaAltRegular.otf */; };
 		44F748D827A9335A00329DD0 /* ProximaNovaAltLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 44F748D227A9334F00329DD0 /* ProximaNovaAltLight.otf */; };
@@ -78,6 +86,14 @@
 		44CBFA1827A953FC00D2B827 /* VeganRestaurantSectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeganRestaurantSectionModel.swift; sourceTree = "<group>"; };
 		44CBFA1A27A95B1100D2B827 /* CuratedRestaurantsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuratedRestaurantsModel.swift; sourceTree = "<group>"; };
 		44CBFA1C27AA448B00D2B827 /* RestaurantListDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListDataModel.swift; sourceTree = "<group>"; };
+		44CBFAA527AE0AA100D2B827 /* FilterLauncher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterLauncher.swift; sourceTree = "<group>"; };
+		44CBFAA727AE11EB00D2B827 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
+		44CBFAAD27AE3C6700D2B827 /* FilterCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCategoryView.swift; sourceTree = "<group>"; };
+		44CBFAAF27AE3C7300D2B827 /* FilterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterDetailView.swift; sourceTree = "<group>"; };
+		44CBFAB127AE4C0100D2B827 /* FilterCategoryTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCategoryTVCell.swift; sourceTree = "<group>"; };
+		44CBFAB327AE51B600D2B827 /* UIString+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIString+Extension.swift"; sourceTree = "<group>"; };
+		44CBFAB527AF8ACF00D2B827 /* FilterDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterDetailTableViewCell.swift; sourceTree = "<group>"; };
+		44CBFAB727AF8ECE00D2B827 /* FilterDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterDataModel.swift; sourceTree = "<group>"; };
 		44F748D227A9334F00329DD0 /* ProximaNovaAltLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ProximaNovaAltLight.otf; sourceTree = "<group>"; };
 		44F748D327A9334F00329DD0 /* ProximaNovaBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ProximaNovaBold.otf; sourceTree = "<group>"; };
 		44F748D427A9334F00329DD0 /* ProximaNovaAltRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ProximaNovaAltRegular.otf; sourceTree = "<group>"; };
@@ -162,6 +178,7 @@
 		44198CBC27A51A2A00EC9883 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				44CBFAAB27AE3AC900D2B827 /* Filter */,
 				44198CBD27A51A3F00EC9883 /* Food */,
 			);
 			path = Views;
@@ -211,6 +228,7 @@
 				44CBFA0C27A935A200D2B827 /* UIFont+Extension.swift */,
 				44198CE327A65A8200EC9883 /* NSTextAttachment+Extension.swift */,
 				44198CE827A6A01500EC9883 /* UIButton+Extension.swift */,
+				44CBFAB327AE51B600D2B827 /* UIString+Extension.swift */,
 			);
 			path = "UIKit-Extension";
 			sourceTree = "<group>";
@@ -242,6 +260,7 @@
 				44CBFA1827A953FC00D2B827 /* VeganRestaurantSectionModel.swift */,
 				44CBFA1A27A95B1100D2B827 /* CuratedRestaurantsModel.swift */,
 				44CBFA1C27AA448B00D2B827 /* RestaurantListDataModel.swift */,
+				44CBFAB727AF8ECE00D2B827 /* FilterDataModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -253,6 +272,27 @@
 				44198CD927A5548900EC9883 /* AppContants.swift */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		44CBFAAB27AE3AC900D2B827 /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				44CBFAAC27AE3AD900D2B827 /* Views */,
+			);
+			path = Filter;
+			sourceTree = "<group>";
+		};
+		44CBFAAC27AE3AD900D2B827 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				44CBFAA527AE0AA100D2B827 /* FilterLauncher.swift */,
+				44CBFAA727AE11EB00D2B827 /* FilterView.swift */,
+				44CBFAAD27AE3C6700D2B827 /* FilterCategoryView.swift */,
+				44CBFAAF27AE3C7300D2B827 /* FilterDetailView.swift */,
+				44CBFAB127AE4C0100D2B827 /* FilterCategoryTVCell.swift */,
+				44CBFAB527AF8ACF00D2B827 /* FilterDetailTableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		44F748D127A9328B00329DD0 /* Fonts */ = {
@@ -346,10 +386,18 @@
 				44198CCE27A5380000EC9883 /* SectionFooterView.swift in Sources */,
 				44CBFA0F27A9360000D2B827 /* ScreenSize.swift in Sources */,
 				44CBFA1B27A95B1100D2B827 /* CuratedRestaurantsModel.swift in Sources */,
+				44CBFAAE27AE3C6700D2B827 /* FilterCategoryView.swift in Sources */,
 				44CBFA1927A953FC00D2B827 /* VeganRestaurantSectionModel.swift in Sources */,
 				44198CBF27A51A5F00EC9883 /* FoodVC.swift in Sources */,
 				44198CA527A5108700EC9883 /* AppDelegate.swift in Sources */,
+				44CBFAB627AF8ACF00D2B827 /* FilterDetailTableViewCell.swift in Sources */,
+				44CBFAB427AE51B600D2B827 /* UIString+Extension.swift in Sources */,
 				44198CC227A51F0E00EC9883 /* FoodVC+Extension.swift in Sources */,
+				44CBFAA627AE0AA100D2B827 /* FilterLauncher.swift in Sources */,
+				44CBFAB827AF8ECE00D2B827 /* FilterDataModel.swift in Sources */,
+				44CBFAB027AE3C7300D2B827 /* FilterDetailView.swift in Sources */,
+				44CBFAB227AE4C0100D2B827 /* FilterCategoryTVCell.swift in Sources */,
+				44CBFAA827AE11EB00D2B827 /* FilterView.swift in Sources */,
 				44C95BCC27A9130800BA83C3 /* SectionHeaderView_2.swift in Sources */,
 				44CBFA1727A94AFD00D2B827 /* FoodTopBannerModel.swift in Sources */,
 				44198CDE27A55C7D00EC9883 /* FoodCategoryCVCell.swift in Sources */,
