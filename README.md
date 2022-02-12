@@ -6,9 +6,11 @@
 This app is a clone of Swiggy (in progress). In this project we will dive deep into UICompositional Layout.
 
 ## Progress Glance
-<img src="https://imgur.com/X9Kruvj.png" height="600"> <img src="https://imgur.com/7dcfmsL.png" height="600">
-<img src="https://imgur.com/JjYsdy0.png" height="600"> <img src="https://imgur.com/wNL1lJl.png" height="600">
-<img src="https://imgur.com/XLsN0QX.png" height="600">
+<img src="https://imgur.com/X9Kruvj.png" height="400"> <img src="https://imgur.com/7dcfmsL.png" height="400">
+<img src="https://imgur.com/JjYsdy0.png" height="400"> <img src="https://imgur.com/wNL1lJl.png" height="400">
+<img src="https://imgur.com/XLsN0QX.png" height="400"> <img src="https://imgur.com/OuwM8Wy.png" height="400">
+<img src="https://imgur.com/52GtJmw.png" height="400"> <img src="https://imgur.com/POAtuHf.png" height="400">
+<img src="https://imgur.com/UaKzfg3.png" height="400">
 
 ## Stuck Somewhere or having trouble ?
 Drop me mail @ dheerajsh123456@gmail.com
