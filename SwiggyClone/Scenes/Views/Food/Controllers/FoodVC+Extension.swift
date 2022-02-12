@@ -28,23 +28,23 @@ extension FoodVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollec
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if indexPath.section == 0 {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FoodTopBannerCVCell", for: indexPath) as! FoodTopBannerCVCell
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Key.ReusableIdentifiers.foodTopBannerId, for: indexPath) as! FoodTopBannerCVCell
             cell.data = foodTopBannerMockData[indexPath.row]
             return cell
         } else if indexPath.section == 1 {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FoodCategoryCVCell", for: indexPath) as! FoodCategoryCVCell
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Key.ReusableIdentifiers.foodCategoryId, for: indexPath) as! FoodCategoryCVCell
             cell.data = foodCategoryMockData[indexPath.row]
             return cell
         } else if indexPath.section == 3 {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FoodSuggestionCardCVCell", for: indexPath) as! FoodSuggestionCardCVCell
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Key.ReusableIdentifiers.foodSuggestionCardId, for: indexPath) as! FoodSuggestionCardCVCell
             cell.data = curatedRestaurantsMockData[indexPath.row]
             return cell
         } else if indexPath.section == 5 {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RestaurantVeganCVCell", for: indexPath) as! RestaurantVeganCVCell
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Key.ReusableIdentifiers.restaurantVeganId, for: indexPath) as! RestaurantVeganCVCell
             cell.data = veganRestaurantMockData[indexPath.row]
             return cell
         }
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RestaurantsListCVCell", for: indexPath) as! RestaurantsListCVCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Key.ReusableIdentifiers.restaurantListId, for: indexPath) as! RestaurantsListCVCell
         cell.data = restaurantListMockData[indexPath.row]
         return cell
     }
@@ -52,21 +52,44 @@ extension FoodVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollec
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         if kind == headerKind {
             if indexPath.section == 2 {
-                let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: foodVCHeaderViewId, for: indexPath) as! FoodFilterHeaderView
+                let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: Key.ReusableIdentifiers.foodVCHeaderViewId, for: indexPath) as! FoodFilterHeaderView
                 header.delegate = self
                 return header
             }
             if indexPath.section == 5 {
-                let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: sectionHeaderView2Id, for: indexPath) as! SectionHeaderView_2
+                let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: Key.ReusableIdentifiers.sectionHeaderView2Id, for: indexPath) as! SectionHeaderView_2
                 return header
             }
-            let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: sectionHeaderViewId, for: indexPath) as! SectionHeaderView
+            let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: Key.ReusableIdentifiers.sectionHeaderViewId, for: indexPath) as! SectionHeaderView
             return header
         } else {
-            let footer = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: sectionFooterViewId, for: indexPath) as! SectionFooterView
+            let footer = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: Key.ReusableIdentifiers.sectionFooterViewId, for: indexPath) as! SectionFooterView
             return footer
         }
         
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if indexPath.section == 0 {
+            let VC = FoodDetailViewController()
+            navigationController?.pushViewController(VC, animated: true)
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didHighlightItemAt indexPath: IndexPath) {
+        if let cell = collectionView.cellForItem(at: indexPath) as? FoodTopBannerCVCell {
+            UIView.animate(withDuration: 0.4, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: .curveEaseIn) {
+                cell.bannerImage.transform = .init(scaleX: 0.95, y: 0.95)
+            }
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didUnhighlightItemAt indexPath: IndexPath) {
+        if let cell = collectionView.cellForItem(at: indexPath) as? FoodTopBannerCVCell {
+            UIView.animate(withDuration: 0.4, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: .curveEaseIn) {
+                cell.bannerImage.transform = .identity
+            }
+        }
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {

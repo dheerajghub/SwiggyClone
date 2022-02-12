@@ -18,8 +18,8 @@
 		44198CCC27A5378100EC9883 /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44198CCB27A5378100EC9883 /* SectionHeaderView.swift */; };
 		44198CCE27A5380000EC9883 /* SectionFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44198CCD27A5380000EC9883 /* SectionFooterView.swift */; };
 		44198CD427A5510C00EC9883 /* Layout+Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44198CD327A5510C00EC9883 /* Layout+Enum.swift */; };
-		44198CD727A5524100EC9883 /* Layout+Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44198CD627A5524100EC9883 /* Layout+Functions.swift */; };
-		44198CDA27A5548900EC9883 /* AppContants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44198CD927A5548900EC9883 /* AppContants.swift */; };
+		44198CD727A5524100EC9883 /* AppLayouts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44198CD627A5524100EC9883 /* AppLayouts.swift */; };
+		44198CDA27A5548900EC9883 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44198CD927A5548900EC9883 /* AppConstants.swift */; };
 		44198CDC27A5560700EC9883 /* FoodTopBannerCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44198CDB27A5560700EC9883 /* FoodTopBannerCVCell.swift */; };
 		44198CDE27A55C7D00EC9883 /* FoodCategoryCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44198CDD27A55C7D00EC9883 /* FoodCategoryCVCell.swift */; };
 		44198CE027A6445900EC9883 /* FoodSuggestionCardCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44198CDF27A6445900EC9883 /* FoodSuggestionCardCVCell.swift */; };
@@ -46,6 +46,9 @@
 		44CBFAB427AE51B600D2B827 /* UIString+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CBFAB327AE51B600D2B827 /* UIString+Extension.swift */; };
 		44CBFAB627AF8ACF00D2B827 /* FilterDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CBFAB527AF8ACF00D2B827 /* FilterDetailTableViewCell.swift */; };
 		44CBFAB827AF8ECE00D2B827 /* FilterDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CBFAB727AF8ECE00D2B827 /* FilterDataModel.swift */; };
+		44CBFABB27B76B6500D2B827 /* FoodDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CBFABA27B76B6500D2B827 /* FoodDetailViewController.swift */; };
+		44CBFABD27B76EE800D2B827 /* FoodDetailViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CBFABC27B76EE800D2B827 /* FoodDetailViewController+Extension.swift */; };
+		44CBFAC127B7B93900D2B827 /* FoodDetailNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CBFAC027B7B93900D2B827 /* FoodDetailNavView.swift */; };
 		44F748D627A9335500329DD0 /* ProximaNovaCondensedBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 44F748D527A9334F00329DD0 /* ProximaNovaCondensedBold.otf */; };
 		44F748D727A9335A00329DD0 /* ProximaNovaAltRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 44F748D427A9334F00329DD0 /* ProximaNovaAltRegular.otf */; };
 		44F748D827A9335A00329DD0 /* ProximaNovaAltLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 44F748D227A9334F00329DD0 /* ProximaNovaAltLight.otf */; };
@@ -66,8 +69,8 @@
 		44198CCB27A5378100EC9883 /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
 		44198CCD27A5380000EC9883 /* SectionFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionFooterView.swift; sourceTree = "<group>"; };
 		44198CD327A5510C00EC9883 /* Layout+Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Layout+Enum.swift"; sourceTree = "<group>"; };
-		44198CD627A5524100EC9883 /* Layout+Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Layout+Functions.swift"; sourceTree = "<group>"; };
-		44198CD927A5548900EC9883 /* AppContants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContants.swift; sourceTree = "<group>"; };
+		44198CD627A5524100EC9883 /* AppLayouts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLayouts.swift; sourceTree = "<group>"; };
+		44198CD927A5548900EC9883 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		44198CDB27A5560700EC9883 /* FoodTopBannerCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTopBannerCVCell.swift; sourceTree = "<group>"; };
 		44198CDD27A55C7D00EC9883 /* FoodCategoryCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCategoryCVCell.swift; sourceTree = "<group>"; };
 		44198CDF27A6445900EC9883 /* FoodSuggestionCardCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodSuggestionCardCVCell.swift; sourceTree = "<group>"; };
@@ -94,6 +97,9 @@
 		44CBFAB327AE51B600D2B827 /* UIString+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIString+Extension.swift"; sourceTree = "<group>"; };
 		44CBFAB527AF8ACF00D2B827 /* FilterDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterDetailTableViewCell.swift; sourceTree = "<group>"; };
 		44CBFAB727AF8ECE00D2B827 /* FilterDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterDataModel.swift; sourceTree = "<group>"; };
+		44CBFABA27B76B6500D2B827 /* FoodDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailViewController.swift; sourceTree = "<group>"; };
+		44CBFABC27B76EE800D2B827 /* FoodDetailViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FoodDetailViewController+Extension.swift"; sourceTree = "<group>"; };
+		44CBFAC027B7B93900D2B827 /* FoodDetailNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailNavView.swift; sourceTree = "<group>"; };
 		44F748D227A9334F00329DD0 /* ProximaNovaAltLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ProximaNovaAltLight.otf; sourceTree = "<group>"; };
 		44F748D327A9334F00329DD0 /* ProximaNovaBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ProximaNovaBold.otf; sourceTree = "<group>"; };
 		44F748D427A9334F00329DD0 /* ProximaNovaAltRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ProximaNovaAltRegular.otf; sourceTree = "<group>"; };
@@ -199,6 +205,8 @@
 				44198CBE27A51A5F00EC9883 /* FoodVC.swift */,
 				44198CC127A51F0E00EC9883 /* FoodVC+Extension.swift */,
 				44C95BC727A9069100BA83C3 /* FoodVC+Delegates.swift */,
+				44CBFABA27B76B6500D2B827 /* FoodDetailViewController.swift */,
+				44CBFABC27B76EE800D2B827 /* FoodDetailViewController+Extension.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -246,6 +254,7 @@
 				44C95BC927A90C2200BA83C3 /* SectionDecorationView.swift */,
 				44C95BCB27A9130800BA83C3 /* SectionHeaderView_2.swift */,
 				44C95BCD27A9162300BA83C3 /* RestaurantVeganCVCell.swift */,
+				44CBFAC027B7B93900D2B827 /* FoodDetailNavView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -254,7 +263,7 @@
 			isa = PBXGroup;
 			children = (
 				44198CD327A5510C00EC9883 /* Layout+Enum.swift */,
-				44198CD627A5524100EC9883 /* Layout+Functions.swift */,
+				44198CD627A5524100EC9883 /* AppLayouts.swift */,
 				44CBFA1427A947BF00D2B827 /* FoodCategoryDataModel.swift */,
 				44CBFA1627A94AFD00D2B827 /* FoodTopBannerModel.swift */,
 				44CBFA1827A953FC00D2B827 /* VeganRestaurantSectionModel.swift */,
@@ -269,7 +278,7 @@
 			isa = PBXGroup;
 			children = (
 				44CBFA0E27A9360000D2B827 /* ScreenSize.swift */,
-				44198CD927A5548900EC9883 /* AppContants.swift */,
+				44198CD927A5548900EC9883 /* AppConstants.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -380,7 +389,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44198CD727A5524100EC9883 /* Layout+Functions.swift in Sources */,
+				44198CD727A5524100EC9883 /* AppLayouts.swift in Sources */,
+				44CBFABD27B76EE800D2B827 /* FoodDetailViewController+Extension.swift in Sources */,
 				44CBFA1527A947BF00D2B827 /* FoodCategoryDataModel.swift in Sources */,
 				44C95BC827A9069100BA83C3 /* FoodVC+Delegates.swift in Sources */,
 				44198CCE27A5380000EC9883 /* SectionFooterView.swift in Sources */,
@@ -399,6 +409,8 @@
 				44CBFAB227AE4C0100D2B827 /* FilterCategoryTVCell.swift in Sources */,
 				44CBFAA827AE11EB00D2B827 /* FilterView.swift in Sources */,
 				44C95BCC27A9130800BA83C3 /* SectionHeaderView_2.swift in Sources */,
+				44CBFABB27B76B6500D2B827 /* FoodDetailViewController.swift in Sources */,
+				44CBFAC127B7B93900D2B827 /* FoodDetailNavView.swift in Sources */,
 				44CBFA1727A94AFD00D2B827 /* FoodTopBannerModel.swift in Sources */,
 				44198CDE27A55C7D00EC9883 /* FoodCategoryCVCell.swift in Sources */,
 				44198CD427A5510C00EC9883 /* Layout+Enum.swift in Sources */,
@@ -415,7 +427,7 @@
 				44198CE927A6A01500EC9883 /* UIButton+Extension.swift in Sources */,
 				44198CCA27A527CB00EC9883 /* FoodFilterHeaderView.swift in Sources */,
 				44198CE227A64D3E00EC9883 /* RestaurantsListCVCell.swift in Sources */,
-				44198CDA27A5548900EC9883 /* AppContants.swift in Sources */,
+				44198CDA27A5548900EC9883 /* AppConstants.swift in Sources */,
 				44CBFA1D27AA448B00D2B827 /* RestaurantListDataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -569,7 +581,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dheerajdev.SwiggyClone;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dheerajdev.Swiggy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -596,7 +608,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dheerajdev.SwiggyClone;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dheerajdev.Swiggy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

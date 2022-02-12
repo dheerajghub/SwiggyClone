@@ -13,19 +13,22 @@ enum LayoutType {
     case foodListLayout
     case suggestionSectionLayout
     case veganSectionLayout
+    case foodDetailBannerLayout
     
     func getLayout(withHeader: Bool = true) -> NSCollectionLayoutSection {
         switch self {
         case .headerLayout:
-            return HeaderLayout()
+            return AppLayouts.shared.HeaderLayout()
         case .foodCategoryLayout:
-            return FoodCategoryLayout()
+            return AppLayouts.shared.FoodCategoryLayout()
         case .foodListLayout:
-            return FoodListLayout(withHeader: withHeader)
+            return AppLayouts.shared.FoodListLayout(withHeader: withHeader)
         case .suggestionSectionLayout:
-            return SuggestionSectionLayout()
+            return AppLayouts.shared.SuggestionSectionLayout()
         case .veganSectionLayout:
-            return VeganSectionLayout()
+            return AppLayouts.shared.VeganSectionLayout()
+        case .foodDetailBannerLayout:
+            return AppLayouts.shared.FoodDetailBannerLayout()
         }
     }
     
