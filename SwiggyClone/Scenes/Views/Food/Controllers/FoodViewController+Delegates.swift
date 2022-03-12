@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension FoodVC: FoodFilterHeaderActionDelegate {
+extension FoodViewController: FoodFilterHeaderActionDelegate {
     
     func didFilterBtnTapped() {
         filterLaucher.showFilter()

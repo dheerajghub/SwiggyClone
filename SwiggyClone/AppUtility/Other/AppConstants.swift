@@ -16,6 +16,9 @@ let sectionBackground = "SectionBackground"
 struct Colors {
     
     static let appOrange = UIColor.hexStringToUIColor(hex: "#FF6600")
+    static let appGray = UIColor.init(red: 246/255, green: 246/255, blue: 248/255, alpha: 1)
+    static let appGreen = UIColor.init(red: 116/255, green: 175/255, blue: 84/255, alpha: 1)
+    static let appGolden = UIColor.init(red: 226/255, green: 159/255, blue: 55/255, alpha: 1)
     
 }
 
@@ -49,6 +52,15 @@ struct Key {
         static let foodSuggestionCardId = "FoodSuggestionCardCVCell"
         static let restaurantVeganId = "RestaurantVeganCVCell"
         
+        static let searchedContentId = "SearchedContentTableViewCell"
+        static let dishedsContentId = "DishesCollectionViewCell"
+        
     }
+    
+}
+
+struct Strings {
+    
+    static let SEARCH_TEXT_PLACEHOLDER = "Search for restaurant, item or more"
     
 }

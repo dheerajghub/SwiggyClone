@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FoodVC: UIViewController {
+class FoodViewController: UIViewController {
 
     // MARK: PROPERTIES -
     

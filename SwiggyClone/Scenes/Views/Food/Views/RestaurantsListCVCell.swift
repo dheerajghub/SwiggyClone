@@ -170,6 +170,8 @@ class RestaurantsListCVCell: UICollectionViewCell {
         }
     }
     
+    
+    
     func setUpConstraints(){
         restaurantImageCover.pin(to: restaurantImageCard)
         offerLabel.pin(to: offerView)

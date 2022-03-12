@@ -17,7 +17,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.windowScene = windowScene
         
-        let VC = FoodVC()
+//        let VC = TabBarViewController()
+//        window?.rootViewController = VC
+        
+        let VC = SearchViewController()
         let navVC = UINavigationController(rootViewController: VC)
         window?.rootViewController = navVC
         

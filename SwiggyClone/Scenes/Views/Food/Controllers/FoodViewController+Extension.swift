@@ -1,5 +1,5 @@
 //
-//  FoodVC+Extension.swift
+//  FoodViewController+Extension.swift.swift
 //  SwiggyClone
 //
 //  Created by Dheeraj Kumar Sharma on 29/01/22.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension FoodVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+extension FoodViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 6
@@ -105,7 +105,7 @@ extension FoodVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollec
     
 }
 
-extension FoodVC {
+extension FoodViewController {
     
     func configureCompositionalLayout() {
         
