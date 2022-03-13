@@ -11,7 +11,7 @@ This app is a clone of Swiggy (in progress). In this project we will dive deep i
 <img src="https://imgur.com/XLsN0QX.png" height="400"> <img src="https://imgur.com/OuwM8Wy.png" height="400">
 <img src="https://imgur.com/52GtJmw.png" height="400"> <img src="https://imgur.com/POAtuHf.png" height="400">
 <img src="https://imgur.com/UaKzfg3.png" height="400"> <img src="https://imgur.com/oiIBeqc.png" height="400">
-<img src="https://imgur.com/wBK57gW.png" height="400">
+<img src="https://imgur.com/wBK57gW.png" height="400"> <img src="https://imgur.com/iuCsiVq.png" height="400">
 
 ## Stuck Somewhere or having trouble ?
 Drop me mail @ dheerajsh123456@gmail.com
