@@ -14,12 +14,12 @@ struct SearchingContentListDataModel {
 }
 
 let searchingContentMockData = [
-    SearchingContentListDataModel(coverImage: "", contentString: "burgers", searchCategory: "dish"),
-    SearchingContentListDataModel(coverImage: "", contentString: "burritos", searchCategory: "dish"),
-    SearchingContentListDataModel(coverImage: "", contentString: "butter naan", searchCategory: "dish"),
-    SearchingContentListDataModel(coverImage: "", contentString: "burger king", searchCategory: "restaurant"),
-    SearchingContentListDataModel(coverImage: "", contentString: "butter roti", searchCategory: "dish"),
-    SearchingContentListDataModel(coverImage: "", contentString: "burgers", searchCategory: "crispy veg burger"),
-    SearchingContentListDataModel(coverImage: "", contentString: "crispy chicken burger", searchCategory: "dish"),
-    SearchingContentListDataModel(coverImage: "", contentString: "butter chicken", searchCategory: "dish"),
+    SearchingContentListDataModel(coverImage: "ic_search_img1", contentString: "burgers", searchCategory: "dish"),
+    SearchingContentListDataModel(coverImage: "ic_search_img8", contentString: "burritos", searchCategory: "dish"),
+    SearchingContentListDataModel(coverImage: "ic_search_img7", contentString: "butter naan", searchCategory: "dish"),
+    SearchingContentListDataModel(coverImage: "ic_search_img2", contentString: "burger king", searchCategory: "restaurant"),
+    SearchingContentListDataModel(coverImage: "ic_search_img6", contentString: "butter roti", searchCategory: "dish"),
+    SearchingContentListDataModel(coverImage: "ic_search_img3", contentString: "crispy veg burger", searchCategory: "dish"),
+    SearchingContentListDataModel(coverImage: "ic_search_img4", contentString: "crispy chicken burger", searchCategory: "dish"),
+    SearchingContentListDataModel(coverImage: "ic_search_img5", contentString: "butter chicken", searchCategory: "dish"),
 ]

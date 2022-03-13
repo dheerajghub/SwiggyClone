@@ -79,6 +79,8 @@ extension SearchedContentContainerView: UITableViewDelegate, UITableViewDataSour
         if searchedData.count == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: Key.ReusableIdentifiers.searchedContentId, for: indexPath) as! SearchedContentTableViewCell
             cell.selectionStyle = .none
+            cell.contentImageView.image = UIImage(named: "ic_search_default")
+            cell.contentImageView.backgroundColor = .black
             cell.setAttributedTitle(title: "No Match found for \"\(searchingFor ?? "--")\"", subtitle: "" , searchFor: nil)
             return cell
         }
@@ -86,6 +88,7 @@ extension SearchedContentContainerView: UITableViewDelegate, UITableViewDataSour
         cell.selectionStyle = .none
         let data = searchedData[indexPath.row]
         cell.setAttributedTitle(title: data.contentString.capitalized, subtitle: "\n\(data.searchCategory.capitalized)", searchFor: searchingFor ?? "")
+        cell.data = data
         return cell
     }
     

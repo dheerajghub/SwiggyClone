@@ -11,6 +11,12 @@ class DishesCollectionViewCell: UICollectionViewCell {
     
     // MARK: PROPERTIES -
     
+    var data: DishesListModel! {
+        didSet {
+            manageUI()
+        }
+    }
+    
     let cardView: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -64,8 +70,9 @@ class DishesCollectionViewCell: UICollectionViewCell {
     let dishPreviewImage: UIImageView = {
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
-        image.backgroundColor = .black
+        image.contentMode = .scaleAspectFill
         image.layer.cornerRadius = 5
+        image.clipsToBounds = true
         return image
     }()
     
@@ -77,7 +84,7 @@ class DishesCollectionViewCell: UICollectionViewCell {
         button.titleLabel?.font = .customFont(ofType: .bold, withSize: 16)
         button.backgroundColor = .white
         button.layer.cornerRadius = 4
-        button.layer.borderWidth = 1.5
+        button.layer.borderWidth = 1
         button.layer.borderColor = UIColor.gray.withAlphaComponent(0.4).cgColor
         
         button.layer.shadowColor = UIColor.black.withAlphaComponent(0.1).cgColor
@@ -146,9 +153,6 @@ class DishesCollectionViewCell: UICollectionViewCell {
         dishPreviewCard.addSubview(customizableStatusLabel)
         
         addSubview(dishDetailInfoLabel)
-        
-        basicInfoLabel.attributedText = setBasicInfoLabel(withTitle: "By McDonald's", withRating: 4.2, withTime: "37 min", withDesc: "")
-        dishDetailInfoLabel.attributedText = setDishDetailInfoLabel(isVeg: true, isBestSeller: true, withTitle: "McAloo Tikki Burger + Fries + Beverages", withPrice: 109.0, withDesc: "Save upto Rs.78 of yur favourite burger with fries and beverages.")
     }
     
     func setUpConstraints(){
@@ -193,7 +197,7 @@ class DishesCollectionViewCell: UICollectionViewCell {
             
             dishDetailInfoLabel.leadingAnchor.constraint(equalTo: cardView.leadingAnchor, constant: 20),
             dishDetailInfoLabel.topAnchor.constraint(equalTo: basicInfoView.bottomAnchor, constant: 10),
-            dishDetailInfoLabel.trailingAnchor.constraint(equalTo: dishPreviewCard.leadingAnchor, constant: -10),
+            dishDetailInfoLabel.trailingAnchor.constraint(equalTo: dishPreviewCard.leadingAnchor, constant: -20),
             dishDetailInfoLabel.bottomAnchor.constraint(equalTo: cardView.bottomAnchor, constant: -20)
         ])
     }
@@ -225,11 +229,11 @@ class DishesCollectionViewCell: UICollectionViewCell {
         
         /// isVeg or nonVeg
         
-        let fontSize = 15.0
+        let fontSize = 14.0
         let font = UIFont.customFont(ofType: .bold, withSize: fontSize)
         
         let dishTypeImage = NSTextAttachment()
-        dishTypeImage.image = UIImage(named: isVeg ? "ic_veg" : "ic_veg")
+        dishTypeImage.image = UIImage(named: isVeg ? "ic_veg" : "ic_nonveg")
         dishTypeImage.bounds = CGRect(x: 0, y: (font.capHeight - fontSize).rounded() / 2, width: fontSize, height: fontSize)
         dishTypeImage.setImageHeight(height: fontSize)
         let dishTypeImageString = NSAttributedString(attachment: dishTypeImage)
@@ -239,7 +243,6 @@ class DishesCollectionViewCell: UICollectionViewCell {
         
         if isBestSeller {
             /// Star Icon
-            
             let fontColor = Colors.appGolden
             let starOriginalImage = UIImage(systemName: "star.fill")?.withRenderingMode(.alwaysTemplate)
             let starImage = NSTextAttachment()
@@ -249,31 +252,25 @@ class DishesCollectionViewCell: UICollectionViewCell {
             let starImageString = NSAttributedString(attachment: starImage)
             attributedText.append(starImageString)
             
-            attributedText.append(NSAttributedString(string: " BESTSELLER\n" , attributes:[NSAttributedString.Key.font: font , NSAttributedString.Key.foregroundColor: fontColor]))
+            attributedText.append(NSAttributedString(string: " BESTSELLER" , attributes:[NSAttributedString.Key.font: font , NSAttributedString.Key.foregroundColor: fontColor]))
         }
         
-        attributedText.append(NSAttributedString(string: "\(withTitle)\n" , attributes:[NSAttributedString.Key.font: UIFont.customFont(ofType: .bold, withSize: 18) , NSAttributedString.Key.foregroundColor: UIColor.black]))
+        attributedText.append(NSAttributedString(string: "\n"))
         
-        attributedText.append(NSAttributedString(string: "₹\(withPrice)\n\n" , attributes:[NSAttributedString.Key.font: UIFont.customFont(ofType: .regular, withSize: 14) , NSAttributedString.Key.foregroundColor: UIColor.black]))
+        attributedText.append(NSAttributedString(string: "\(withTitle)\n" , attributes:[NSAttributedString.Key.font: UIFont.customFont(ofType: .bold, withSize: 16) , NSAttributedString.Key.foregroundColor: UIColor.black]))
         
-        attributedText.append(NSAttributedString(string: "\(desc)" , attributes:[NSAttributedString.Key.font: UIFont.customFont(ofType: .regular, withSize: 13) , NSAttributedString.Key.foregroundColor: UIColor.gray.withAlphaComponent(0.8)]))
+        attributedText.append(NSAttributedString(string: "₹\(withPrice)\n\n" , attributes:[NSAttributedString.Key.font: UIFont.customFont(ofType: .regular, withSize: 13) , NSAttributedString.Key.foregroundColor: UIColor.black]))
+        
+        attributedText.append(NSAttributedString(string: "\(desc)" , attributes:[NSAttributedString.Key.font: UIFont.customFont(ofType: .regular, withSize: 12) , NSAttributedString.Key.foregroundColor: UIColor.gray.withAlphaComponent(0.8)]))
         
         return attributedText
     }
     
-}
-
-extension UIView {
-
-    func drawDottedLine(start p0: CGPoint, end p1: CGPoint, color: UIColor = .black) {
-        let shapeLayer = CAShapeLayer()
-        shapeLayer.strokeColor = color.cgColor
-        shapeLayer.lineWidth = 2
-        shapeLayer.lineDashPattern = [3, 4] // 3 is the length of dash, 4 is length of the gap.
-
-        let path = CGMutablePath()
-        path.addLines(between: [p0, p1])
-        shapeLayer.path = path
-        self.layer.addSublayer(shapeLayer)
+    func manageUI(){
+        guard let data = data else { return }
+        dishPreviewImage.image = UIImage(named: data.menuImage)
+        basicInfoLabel.attributedText = setBasicInfoLabel(withTitle: data.restaurantTitle, withRating: data.ratings, withTime: data.time, withDesc: "")
+        dishDetailInfoLabel.attributedText = setDishDetailInfoLabel(isVeg: data.isVeg, isBestSeller: data.isBestSeller, withTitle: data.menuTitle, withPrice: data.price, withDesc: data.desc)
     }
+    
 }

@@ -26,4 +26,16 @@ extension UIView {
         self.layer.insertSublayer(gradient, at: 0)
     }
     
+    func drawDottedLine(start p0: CGPoint, end p1: CGPoint, color: UIColor = .black) {
+        let shapeLayer = CAShapeLayer()
+        shapeLayer.strokeColor = color.cgColor
+        shapeLayer.lineWidth = 2
+        shapeLayer.lineDashPattern = [3, 4] // 3 is the length of dash, 4 is length of the gap.
+
+        let path = CGMutablePath()
+        path.addLines(between: [p0, p1])
+        shapeLayer.path = path
+        self.layer.addSublayer(shapeLayer)
+    }
+    
 }

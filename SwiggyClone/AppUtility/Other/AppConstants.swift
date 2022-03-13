@@ -55,6 +55,8 @@ struct Key {
         static let searchedContentId = "SearchedContentTableViewCell"
         static let dishedsContentId = "DishesCollectionViewCell"
         
+        static let searchFilterId = "SearchFiltersCollectionViewCell" 
+        static let searchCategoryId = "SearchCategoryCollectionViewCell"
     }
     
 }

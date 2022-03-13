@@ -11,11 +11,18 @@ class SearchedContentTableViewCell: UITableViewCell {
 
     // MARK: PROPERTIES -
     
+    var data: SearchingContentListDataModel! {
+        didSet {
+            contentImageView.image = UIImage(named: data.coverImage)
+        }
+    }
+    
     let contentImageView: UIImageView = {
         let img = UIImageView()
         img.translatesAutoresizingMaskIntoConstraints = false
-        img.backgroundColor = .black
+        img.contentMode = .scaleAspectFill
         img.layer.cornerRadius = 5
+        img.clipsToBounds = true
         return img
     }()
     

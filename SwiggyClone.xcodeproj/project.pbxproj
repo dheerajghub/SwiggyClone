@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		440D3CEF27DDB84800106244 /* SearchFilterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440D3CEE27DDB84800106244 /* SearchFilterModel.swift */; };
+		440D3CF127DDB97F00106244 /* SearchFiltersCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440D3CF027DDB97F00106244 /* SearchFiltersCollectionViewCell.swift */; };
+		440D3CF327DDBF9300106244 /* SearchCategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440D3CF227DDBF9300106244 /* SearchCategoryCollectionViewCell.swift */; };
+		440D3CF527DDE9C200106244 /* DishesListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440D3CF427DDE9C200106244 /* DishesListModel.swift */; };
 		44198CA527A5108700EC9883 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44198CA427A5108700EC9883 /* AppDelegate.swift */; };
 		44198CA727A5108700EC9883 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44198CA627A5108700EC9883 /* SceneDelegate.swift */; };
 		44198CAE27A5108900EC9883 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44198CAD27A5108900EC9883 /* Assets.xcassets */; };
@@ -68,6 +72,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		440D3CEE27DDB84800106244 /* SearchFilterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFilterModel.swift; sourceTree = "<group>"; };
+		440D3CF027DDB97F00106244 /* SearchFiltersCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFiltersCollectionViewCell.swift; sourceTree = "<group>"; };
+		440D3CF227DDBF9300106244 /* SearchCategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		440D3CF427DDE9C200106244 /* DishesListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishesListModel.swift; sourceTree = "<group>"; };
 		44198CA127A5108700EC9883 /* SwiggyClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiggyClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44198CA427A5108700EC9883 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44198CA627A5108700EC9883 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -298,6 +306,8 @@
 				44CBFA1C27AA448B00D2B827 /* RestaurantListDataModel.swift */,
 				44CBFAB727AF8ECE00D2B827 /* FilterDataModel.swift */,
 				4466D29027D49A01009A5BB6 /* SearchingContentListDataModel.swift */,
+				440D3CEE27DDB84800106244 /* SearchFilterModel.swift */,
+				440D3CF427DDE9C200106244 /* DishesListModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -359,7 +369,6 @@
 			children = (
 				4466D28627D478D1009A5BB6 /* SearchedContentContainerView.swift */,
 				4466D28827D479EF009A5BB6 /* SearchContainerView.swift */,
-				4466D28A27D488C4009A5BB6 /* SearchedContentTableViewCell.swift */,
 			);
 			path = SearchedContainer;
 			sourceTree = "<group>";
@@ -371,6 +380,9 @@
 				44623DCB27DC651E0069FD14 /* SearchCategoryCustomView.swift */,
 				441F0C7827DC6A51009CC5A6 /* SearchFilterCustomView.swift */,
 				44A8154127DCCC39007404C0 /* DishesCollectionViewCell.swift */,
+				440D3CF027DDB97F00106244 /* SearchFiltersCollectionViewCell.swift */,
+				440D3CF227DDBF9300106244 /* SearchCategoryCollectionViewCell.swift */,
+				4466D28A27D488C4009A5BB6 /* SearchedContentTableViewCell.swift */,
 			);
 			path = SearchDetailContainer;
 			sourceTree = "<group>";
@@ -486,6 +498,7 @@
 				44CBFA1527A947BF00D2B827 /* FoodCategoryDataModel.swift in Sources */,
 				44C95BC827A9069100BA83C3 /* FoodViewController+Delegates.swift in Sources */,
 				4466D28727D478D1009A5BB6 /* SearchedContentContainerView.swift in Sources */,
+				440D3CEF27DDB84800106244 /* SearchFilterModel.swift in Sources */,
 				4466D28427D4732B009A5BB6 /* TabBarViewController.swift in Sources */,
 				44198CCE27A5380000EC9883 /* SectionFooterView.swift in Sources */,
 				44CBFA0F27A9360000D2B827 /* ScreenSize.swift in Sources */,
@@ -493,15 +506,18 @@
 				44CBFAAE27AE3C6700D2B827 /* FilterCategoryView.swift in Sources */,
 				44CBFA1927A953FC00D2B827 /* VeganRestaurantSectionModel.swift in Sources */,
 				44198CBF27A51A5F00EC9883 /* FoodViewController.swift in Sources */,
+				440D3CF527DDE9C200106244 /* DishesListModel.swift in Sources */,
 				44198CA527A5108700EC9883 /* AppDelegate.swift in Sources */,
 				44CBFAB627AF8ACF00D2B827 /* FilterDetailTableViewCell.swift in Sources */,
 				44CBFAB427AE51B600D2B827 /* UIString+Extension.swift in Sources */,
 				44198CC227A51F0E00EC9883 /* FoodViewController+Extension.swift in Sources */,
 				44CBFAA627AE0AA100D2B827 /* FilterLauncher.swift in Sources */,
+				440D3CF327DDBF9300106244 /* SearchCategoryCollectionViewCell.swift in Sources */,
 				44CBFAB827AF8ECE00D2B827 /* FilterDataModel.swift in Sources */,
 				44CBFAB027AE3C7300D2B827 /* FilterDetailView.swift in Sources */,
 				44CBFAB227AE4C0100D2B827 /* FilterCategoryTVCell.swift in Sources */,
 				4466D29127D49A01009A5BB6 /* SearchingContentListDataModel.swift in Sources */,
+				440D3CF127DDB97F00106244 /* SearchFiltersCollectionViewCell.swift in Sources */,
 				4466D28B27D488C4009A5BB6 /* SearchedContentTableViewCell.swift in Sources */,
 				44CBFAA827AE11EB00D2B827 /* FilterView.swift in Sources */,
 				44C95BCC27A9130800BA83C3 /* SectionHeaderView_2.swift in Sources */,

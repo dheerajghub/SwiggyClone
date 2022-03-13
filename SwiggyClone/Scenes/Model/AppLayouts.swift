@@ -114,6 +114,19 @@ class AppLayouts {
         
         return section
     }
+    
+    func HorizontalDynamicLayout() -> NSCollectionLayoutSection {
+        let item = NSCollectionLayoutItem(layoutSize: .init(widthDimension: .estimated(100), heightDimension: .fractionalHeight(1)))
+        
+        let group = NSCollectionLayoutGroup.horizontal(layoutSize: .init(widthDimension: .estimated(100), heightDimension: .absolute(30)), subitems: [item])
+        
+        let section = NSCollectionLayoutSection(group: group)
+        section.orthogonalScrollingBehavior = .continuous
+        section.interGroupSpacing = 10
+        section.contentInsets = NSDirectionalEdgeInsets(top: 15, leading: 15 , bottom: 15, trailing: 15)
+        
+        return section
+    }
 
     
 }
