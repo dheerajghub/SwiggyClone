@@ -1,4 +1,4 @@
-<p align="center" style="background-color:red" ><img src="https://imgur.com/iDDgLOk.png" width="400" ></p>
+<p align="center" style="background-color:white" ><img src="https://imgur.com/iDDgLOk.png" width="400" ></p>
 
 ![platform](https://img.shields.io/badge/platform-iOS-orange?style=flat-square)
 
