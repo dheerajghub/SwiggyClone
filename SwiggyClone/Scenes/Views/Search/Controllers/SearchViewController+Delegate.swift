@@ -5,7 +5,7 @@
 //  Created by Dheeraj Kumar Sharma on 06/03/22.
 //
 
-import Foundation
+import UIKit
 
 extension SearchViewController: SearchContainerViewActionDelegate, SearchedContentActionDelegate {
     
@@ -48,6 +48,15 @@ extension SearchViewController: SearchContainerViewActionDelegate, SearchedConte
             searchedContentContainerView.isHidden = true
             searchedContentContainerView.searchingFor = nil
         }
+    }
+    
+}
+
+extension SearchViewController: UITextFieldDelegate {
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
     
 }

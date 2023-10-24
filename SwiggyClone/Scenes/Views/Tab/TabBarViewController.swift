@@ -36,18 +36,18 @@ class TabBarViewController: UITabBarController, UITabBarControllerDelegate{
         
         viewControllers = [foodViewController , searchViewController]
         
-        self.tabBar.isTranslucent = false
+//        self.tabBar.isTranslucent = false
         self.tabBar.backgroundImage = UIImage()
-        self.tabBar.barTintColor = .white
+        UITabBar.appearance().backgroundColor = .white
         
-        customTab(selectedImage: "ic_food", deselectedImage: "ic_food_selected", indexOfTab: 0 , tabTitle: "")
-        customTab(selectedImage: "ic_search", deselectedImage: "ic_search_selected", indexOfTab: 1 , tabTitle: "")
+        customTab(selectedImage: "ic_food_tab_selected", deselectedImage: "ic_food_tab", indexOfTab: 0 , tabTitle: "")
+        customTab(selectedImage: "ic_search_tab_selected", deselectedImage: "ic_search_tab", indexOfTab: 1 , tabTitle: "")
     }
     
     func customTab(selectedImage image1 : String , deselectedImage image2: String , indexOfTab index: Int , tabTitle title: String ){
 
-        let selectedImage = UIImage(named: image1)
-        let deselectedImage = UIImage(named: image2)
+        let selectedImage = UIImage(named: image1)?.withRenderingMode(.alwaysOriginal)
+        let deselectedImage = UIImage(named: image2)?.withRenderingMode(.alwaysOriginal)
         
         tabItem = self.tabBar.items![index]
         tabItem.image = deselectedImage
@@ -57,3 +57,5 @@ class TabBarViewController: UITabBarController, UITabBarControllerDelegate{
     }
 
 }
+
+

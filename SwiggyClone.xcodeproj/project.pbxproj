@@ -326,16 +326,8 @@
 			children = (
 				4466D28527D478B9009A5BB6 /* View */,
 				4466D27F27D471C1009A5BB6 /* Controllers */,
-				4466D27E27D471BB009A5BB6 /* Views */,
 			);
 			path = Search;
-			sourceTree = "<group>";
-		};
-		4466D27E27D471BB009A5BB6 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		4466D27F27D471C1009A5BB6 /* Controllers */ = {

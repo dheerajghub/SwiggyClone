@@ -17,12 +17,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.windowScene = windowScene
         
-//        let VC = TabBarViewController()
-//        window?.rootViewController = VC
+        let VC = TabBarViewController()
+        window?.rootViewController = VC
         
-        let VC = SearchViewController()
-        let navVC = UINavigationController(rootViewController: VC)
-        window?.rootViewController = navVC
+//        let VC = SearchViewController()
+//        let navVC = UINavigationController(rootViewController: VC)
+//        window?.rootViewController = navVC
         
         window?.makeKeyAndVisible()
     }

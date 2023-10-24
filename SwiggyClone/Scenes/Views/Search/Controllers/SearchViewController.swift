@@ -18,6 +18,7 @@ class SearchViewController: UIViewController {
         view.translatesAutoresizingMaskIntoConstraints = false
         view.backgroundColor = .white
         view.delegate = self
+        view.searchTextField.delegate = self
         return view
     }()
     
@@ -44,6 +45,10 @@ class SearchViewController: UIViewController {
         setUpNavigations()
         setUpViews()
         setUpConstraints()
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
     
     // MARK: FUNCTIONS -
